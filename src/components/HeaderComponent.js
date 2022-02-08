@@ -8,7 +8,7 @@ class HeaderComponent extends Component {
                 <header id="header">
                     <div className="container clearfix">
                         <div className="logo-box">
-                            <h1><a href="#" title="logo"><img src="./images/logo.png" alt="logo"/></a></h1>
+                            <h1><a href="#" title="logo"><img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="logo"/></a></h1>
                         </div>
                         <div className="nav-box">
                             <aside id="aside">
@@ -17,7 +17,7 @@ class HeaderComponent extends Component {
                                     <li><a href="#" title="My Starbucks">My Starbucks</a></li>
                                     <li><a href="#" title="Customer Service & Ideas">Customer Service & Ideas</a></li>
                                     <li><a href="#" title="Find a Store">Find a Store</a></li>
-                                    <li><div className="find-box"><input type="text" placeholder="통합검색"/><a href="#" title="통합검색" className="find-btn"><img src="./images/icon_magnifier_black.png" alt=""/></a></div></li>
+                                    <li><div className="find-box"><input type="text" placeholder="통합검색"/><a href="#" title="통합검색" className="find-btn"><img src={process.env.PUBLIC_URL + "/images/icon_magnifier_black.png"} alt=""/></a></div></li>
                                 </ul>
                             </aside>
                             <nav id="nav">
@@ -163,7 +163,7 @@ class HeaderComponent extends Component {
                                             <div className="sub-bottom">
                                                 <div className="sub-container">
                                                     <dl>
-                                                        <dt><a href="#">나이트로 콜드 브루 <img src="./images/icon_gnb_new.png" alt=""/></a></dt>
+                                                        <dt><a href="#">나이트로 콜드 브루 <img src={process.env.PUBLIC_URL + "/images/icon_gnb_new.png"} alt=""/></a></dt>
                                                         <dd>나이트로 커피 정통의 물결치듯 흘러내리는 캐스케이딩과 부드러운 크림을 경험하세요.</dd>
                                                     </dl>
                                                 </div>
@@ -403,9 +403,9 @@ class HeaderComponent extends Component {
                         {/* <!-- 모바일 네비게이션 --> */}
                         <div id="mobile">
                         <ul>
-                            <li><a href="#" className="login-btn"><img src="./images/icon_user_m.png" alt=""/></a></li>
-                            <li><a href="#" className="maps-btn"><img src="./images/icon_spot_m.png" alt=""/></a></li>
-                            <li><a href="#" className="berger-btn"><img src="./images/btn_berger_m.png" alt=""/></a></li>
+                            <li><a href="#" className="login-btn"><img src={process.env.PUBLIC_URL + "/images/icon_user_m.png"} alt=""/></a></li>
+                            <li><a href="#" className="maps-btn"><img src={process.env.PUBLIC_URL + "/images/icon_spot_m.png"} alt=""/></a></li>
+                            <li><a href="#" className="berger-btn"><img src={process.env.PUBLIC_URL + "/images/btn_berger_m.png"} alt=""/></a></li>
                         </ul>
                         </div>
 

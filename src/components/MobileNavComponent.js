@@ -388,7 +388,7 @@ class MobileNavComponent extends Component {
                         </li>
                         </ul>
                         <span className="mobile-close-box">
-                        <a href="#" className="mobile-close-btn"><img src="./images/btn_gnb_close.png" alt=""/></a>
+                        <a href="#" className="mobile-close-btn"><img src={process.env.PUBLIC_URL + "/images/btn_gnb_close.png"} alt=""/></a>
                     </span>
                     </div>
                     </nav>

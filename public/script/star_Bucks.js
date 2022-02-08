@@ -4,7 +4,6 @@
             this.section1();
             this.section2Notice();  // 객체를 다르게 하면
             this.section2Slide();   // 변수, 함수 충돌을 막을 수 있다.
-            this.section3();
             this.section4();
             this.section5();
             this.section6();
@@ -261,16 +260,15 @@
             // 슬라이드 콘테이너 박스 위에 마우스 올라가면 슬라이드 정지
             // 슬라이드 콘테이너 박스 위에 마우스 떠나면 슬라이드 재실행
             $('.slide-wrap').on({
-                mouseenter: function(){
+                mouseenter: function(e){
+                    e.preventDefault();
                     stopFn();
                 },
-                mouseleave: function(){
+                mouseleave: function(e){
+                    e.preventDefault();
                     playFn();
                 }
             });
-        },
-        section3: function(){
-
         },
         section4: function(){
 
@@ -345,21 +343,34 @@
             });
 
             //반응형
-            var leftW = $('#section8 .left').innerWidth();
+            var leftW=null;
+            var leftH=null;
+            
+            function leftResize(){
 
-            function resize(){
-                leftW = $('#section8 .left').innerWidth();
-                if(leftW<=366){
-                    $('#section8 .left').css({height:leftW*0.85246});
+                // 자체너비는 문제가 있음
+                // 이유는 안에 들어있는 이미지 작은이미지가 우측 으로 빠진것 때문에 크기 문제
+                // 그래서 
+                // 창너비가 960이하이면 
+                // left박스의 너비 = 창너비*(이미지너비 비율) 0.38125
+                // left박스의 높이 = left박스의 너비*높이 비율 0.85246
+
+                let winW = $(window).innerWidth();          
+                if( winW <= 960 ){    // 창너비가 
+                    leftW = winW * 0.38125;                 
+                    leftH = leftW * 0.85246; //높이 = 너비*비율(85.246%)
                 }
-                else {
-                    $('#section8 .left').css({height:312});
+                else{
+                    leftW = 366;
+                    leftH = 312;
                 }
+                $('#section8 .left').css({ width:leftW, height:leftH });
+
             }
-            resize();
+            leftResize();
 
             $(window).resize(function(){
-                resize();
+                leftResize();
             });
         },
         // section9: function(){

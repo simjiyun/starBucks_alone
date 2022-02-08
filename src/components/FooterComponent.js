@@ -65,12 +65,12 @@ class FooterComponent extends Component {
                     </div>
                     <div className="middle">
                         <div className="wrap">
-                        <span><a href="#" title="여성가족부장관상"><img src="./images/footer_award23.jpg" alt=""/></a></span>
-                        <span><a href="#" title="행정안전부장관 표창"><img src="./images/footer_award24.jpg" alt=""/></a></span>
-                        <span><a href="#" title="농림축산식품부 장관상"><img src="./images/footer_award25.jpg" alt=""/></a></span>
-                        <span><a href="#" title="국회산업통상자원중소벤쳐위원회장상"><img src="./images/footer_award26.jpg" alt=""/></a></span>
-                        <span><a href="#" title="대통령직속 일자리위원회 부위원장"><img src="./images/footer_award27.jpg" alt=""/></a></span>
-                        <span><a href="#" title="반성장위원회 위원장상"><img src="./images/footer_award28.jpg" alt="동"/></a></span>
+                        <span><a href="#" title="여성가족부장관상"><img src={process.env.PUBLIC_URL + "/images/footer_award23.jpg"} alt=""/></a></span>
+                        <span><a href="#" title="행정안전부장관 표창"><img src={process.env.PUBLIC_URL + "/images/footer_award24.jpg"} alt=""/></a></span>
+                        <span><a href="#" title="농림축산식품부 장관상"><img src={process.env.PUBLIC_URL + "/images/footer_award25.jpg"} alt=""/></a></span>
+                        <span><a href="#" title="국회산업통상자원중소벤쳐위원회장상"><img src={process.env.PUBLIC_URL + "/images/footer_award26.jpg"} alt=""/></a></span>
+                        <span><a href="#" title="대통령직속 일자리위원회 부위원장"><img src={process.env.PUBLIC_URL + "/images/footer_award27.jpg"} alt=""/></a></span>
+                        <span><a href="#" title="반성장위원회 위원장상"><img src={process.env.PUBLIC_URL + "/images/footer_award28.jpg"} alt="동"/></a></span>
                         </div>
                     </div>
                     <div className="bottom">
