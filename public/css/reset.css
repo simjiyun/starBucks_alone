@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* 모바일에서 세로방향에서 가로방향으로 바뀌면 글자가 커져서 보인다. => 이걸 막아야함 */
+/* text-size-조정(어저스트):100%; */
+/* -webkit-text-size-adjust:100%;-moz-ms-text-size-adust:100%;-ms-text-size-adjust:100%; */
+/* text-size-adjust:100%; */
+
+* {margin:0;box-sizing:border-box;border:0;padding:0;vertical-align:middle;text-size-adjust:100%;}
+html, body {width:100%;height:100%;}
+html {overflow-y:scroll;}
+body {font:normal 14px/1 'Nanum Gothic', 'arial', 'sans-serif';background:#ffffff;color:#333;}
+a {color:#222328;text-decoration:none;}
+ul, li {list-style:none;}
+.hide {display:none;}
+.blind {text-indent:-2000px;overflow:hidden;display:block;}
+em, i, address {font-style:normal;}
+header, main, footer, section, nav, article, aside {display:block;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+.clearfix::after {display:block;content:'';clear:both;}
