@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/starBucks_alone/static/js/main.695f600d.js",
+    "static/js/787.d83f0b62.chunk.js": "/starBucks_alone/static/js/787.d83f0b62.chunk.js",
+    "index.html": "/starBucks_alone/index.html",
+    "main.695f600d.js.map": "/starBucks_alone/static/js/main.695f600d.js.map",
+    "787.d83f0b62.chunk.js.map": "/starBucks_alone/static/js/787.d83f0b62.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.695f600d.js"
+  ]
+}
